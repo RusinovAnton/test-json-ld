@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Testing dynamic json-ld</title>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Movie",
+        "name": "Movie1",
+        "actor": {
+          "@type": "Person",
+          "name": "John Doe",
+          "sameAs": "http://www.imdb.com/name/0000000000"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://images.com/img/00000.png"
+        }
+    }
+  </script>
 </head>
 <body>
   <script type="text/javascript">
