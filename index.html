@@ -16,7 +16,7 @@
 
           script.setAttribute('type', 'application/ld+json');
           script.innerHTML = JSON.stringify(data);
-          document.body.append(script);
+          document.head.append(script);
         });
     }
   </script>
