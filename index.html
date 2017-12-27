@@ -31,7 +31,7 @@
           const script = document.createElement('script');
 
           script.setAttribute('type', 'application/ld+json');
-          script.innerHTML = JSON.stringify(data);
+          script.text = JSON.stringify(data);
           document.head.append(script);
         });
     }
