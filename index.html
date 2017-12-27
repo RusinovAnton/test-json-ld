@@ -12,7 +12,7 @@
       fetch('./data.json')
         .then(res => res.json())
         .then(data => {
-          document.getElementById('data').innerText = data;
+          document.getElementById('data').innerText = JSON.stringify(data);
         });
     }
   </script>
