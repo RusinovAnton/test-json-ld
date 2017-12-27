@@ -12,11 +12,13 @@
       fetch('./data.json')
         .then(res => res.json())
         .then(data => {
-          document.getElementById('data').innerText = JSON.stringify(data);
+          const script = document.createElement('script');
+
+          script.setAttribute('type', 'application/ld+json');
+          script.innerHTML = JSON.stringify(data);
+          document.body.append(script);
         });
     }
-  </script>
-  <script id="data" type="application/json+ld">
   </script>
 </body>
 </html>
