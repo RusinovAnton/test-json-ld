@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Testing dynamic json-ld</title>
+  <script type="text/javascript">
+    fetch('./data.json')
+      .then(res => res.json())
+      .then(data => {
+        const script = document.createElement('script');
+
+        script.setAttribute('type', 'application/ld+json');
+        script.text = JSON.stringify(data);
+        document.head.append(script);
+      });
+  </script>
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -23,18 +34,6 @@
   </script>
 </head>
 <body>
-  <script type="text/javascript">
-    window.onload = function() {
-      fetch('./data.json')
-        .then(res => res.json())
-        .then(data => {
-          const script = document.createElement('script');
-
-          script.setAttribute('type', 'application/ld+json');
-          script.text = JSON.stringify(data);
-          document.head.append(script);
-        });
-    }
-  </script>
+  <h1>Hello</h1>
 </body>
 </html>
