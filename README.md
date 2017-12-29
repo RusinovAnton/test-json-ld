@@ -1,5 +1,9 @@
 # Test dynamic JSON-LD
 
+Test if googlebot parses static, dynamic and async JSON-LD data.
+
+## Conclusion
+Only static JSON-LD being parsed, actually.
 
 ## Using testing-tool
 Testing if google search engine could parse dynamically added json-ld content.
