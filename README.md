@@ -9,7 +9,7 @@ https://search.google.com/structured-data/testing-tool/u/0/#url=https%3A%2F%2Fru
 
 ## Using fetch as google bot
 
-![image]()
+![image](https://github.com/RusinovAnton/test-json-ld/blob/master/fetch-as-google-screenshot.png?raw=true)
 
 ```html
 HTTP/1.1 200 OK
