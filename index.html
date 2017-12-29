@@ -6,6 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Testing dynamic json-ld</title>
   <script type="text/javascript">
+    const data = {
+      "@context": "http://schema.org",
+      "@type": "Movie",
+        "name": "Dynamic",
+    };
+    const script = document.createElement('script');
+    script.setAttribute('type', 'application/ld+json');
+    script.text = JSON.stringify(data);
+    document.head.append(script);
+  </script>
+  <script type="text/javascript">
     fetch('./data.json')
       .then(res => res.json())
       .then(data => {
@@ -20,16 +31,7 @@
     {
       "@context": "http://schema.org",
       "@type": "Movie",
-        "name": "Movie1",
-        "actor": {
-          "@type": "Person",
-          "name": "John Doe",
-          "sameAs": "http://www.imdb.com/name/0000000000"
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "http://images.com/img/00000.png"
-        }
+        "name": "Static",
     }
   </script>
 </head>

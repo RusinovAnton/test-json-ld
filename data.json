@@ -1,15 +1,5 @@
 {
   "@context": "http://schema.org",
   "@type": "Movie",
-    "name": "Jason Bourne",
-    "url": "http://www.jasonbourne.com/",
-    "actor": {
-      "@type": "Person",
-      "name": "Matt Damon",
-      "sameAs": "http://www.imdb.com/name/nm0000354"
-    },
-    "image": {
-      "@type": "ImageObject",
-      "url": "http://themoderatevoice.com/wp-content/uploads/2016/08/maxresdefault.jpg"
-    }
+  "name": "Async",
 }
